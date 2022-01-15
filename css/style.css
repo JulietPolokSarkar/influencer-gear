@@ -5,7 +5,9 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: white;
+    margin: 0%;
     margin-right: 120px;
+    overflow-x: hidden;
 }
 
 /* header style */
@@ -24,7 +26,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: #3A3A3A;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -73,25 +75,128 @@ nav a {
 }
 
 .journey-image img{
-    position: absolute;
     width: 440px;
     height: 440px;
-    left: 835px;
-    top: 190px;
+    margin-left: 150px;
+    margin-top: 70px;
     margin-right: 165px;
 }
 
 /* logo section style */
+
 .logos{
     display: flex;
-    position: absolute;
-    border-top: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
-    width: 1110px;
+    border-top: 2px solid rgb(230, 230, 230);
+    border-bottom: 2px solid rgb(230, 230, 230);
+    width: 900px;
     height: 110px;
-    left: 165px;
-    top: 725px;
+    margin-left: 260px;
+    margin-top: 95px;
     align-items: center;
     justify-content: space-evenly;
 }
 
+/* collection style */
+.collection-title{
+    margin-top: 100px;
+    margin-left: 165px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: #3A3A3A;
+}
+
+.collections{
+    margin-left: 165px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.collection{
+    width: 329px;
+    height: 476px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.collection img{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.collection-info{
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 15px;
+    color: #18191F;
+    margin-bottom: 0%;
+}
+
+.collection-head{
+    font-size: 28px;
+    font-weight: 500px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.price{
+    font-size: 24px;
+    font-weight: 400px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.rating{
+    margin-bottom: 5px;
+}
+
+.rating i{
+    color: orange;
+    font-size: 12px;
+}
+
+.rate{
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.paragraph{
+    height: 61px;
+    width: 196px;
+    color: #787885;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+/* footer style */
+footer{
+    color: white;
+    background-color: #202020;
+    height:30vh;
+    left: 0;
+    bottom: 0;
+    width: 110%;
+    text-align: center;
+    justify-content: center;
+}
+
+footer h2{
+    font-size: 24px;
+    padding-top: 50px;
+    margin-bottom: 0%;
+}
+
+footer p{
+    font-size: 14px;
+    padding-top: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer div i{
+    margin-right: 15px;
+}
+
+.fa-instagram{
+    margin-left: 20px;
+}
