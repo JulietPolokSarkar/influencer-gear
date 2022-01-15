@@ -201,6 +201,84 @@ footer div i{
     margin-left: 20px;
 }
 
+/* extra section and animation */ 
+.animation {
+    display: flex;
+    margin-left: 165px;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+  }
+  .waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 40px;
+  }
+  .waviy span {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: inline-block;
+    color: #E02C6D;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+  .item-info{
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .photo img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+  }
+
+  .item-detail{
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      top: 0;
+      display: none;
+  }
+  
+  .item-info:hover .item-detail{
+      display: block;
+      background-color: rgba(255, 255, 255, 0.911);
+      color: black;
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+  }
+
+  .item-detail h1{
+    color: #E02C6D;
+}
+
+.sale-items{
+    margin-left: 165px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+}
+
+.item-info:hover .photo{
+    transform: scale(1.3);
+}
+
 /* .........
 media query 
 ...........*/
@@ -256,8 +334,12 @@ media query
         text-align: center;
         justify-content: center;
     }
-    
+    .animation {
+    margin-left: 200px;
+    width: 100%;
+  }
 }
+
 
 /* .........
 media query 
@@ -280,4 +362,10 @@ media query
         width: 235%;
     }
 
+    .animation {
+        margin-left: 400px;
+        width: 100%;
+      }
+
 }
+
