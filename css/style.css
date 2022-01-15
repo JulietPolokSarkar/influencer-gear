@@ -337,7 +337,11 @@ media query
     .animation {
     margin-left: 200px;
     width: 100%;
-  }
+   }
+   .sale-items{
+       margin-left: 250px;
+    grid-template-columns: repeat(1, 1fr);
+   }
 }
 
 
@@ -365,7 +369,13 @@ media query
     .animation {
         margin-left: 400px;
         width: 100%;
-      }
+    }
+
+    .sale-items{
+        margin-left: 350px;
+        grid-column-gap: 250px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
