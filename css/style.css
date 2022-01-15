@@ -1,6 +1,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 /* common styles */
 body{
     font-family: 'Poppins', sans-serif;
@@ -25,6 +25,7 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin-right: 34px;
@@ -32,5 +33,51 @@ nav a {
 
 .menu-icon2{
     margin-right: 0%;
+}
+
+/* journey as influencer style */
+.journey{
+    display: flex;
+}
+
+.journey-paragraph{
+    margin-left: 120px;
+    margin-top: 100px;
+    width: 582px;
+    height: 270px;
+}
+
+.heading{
+    width: 582px;
+    height: 133px;
+    font-size: 30px;
+    color: #3A3A3A;
+}
+
+.article{
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.prebook-button a{
+    width: 196px;
+    height: 44px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 41px;
+    padding: 10px 24px 10px 24px;
+}
+
+.journey-image img{
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    left: 835px;
+    top: 190px;
+    margin-right: 165px;
 }
 
