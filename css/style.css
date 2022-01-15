@@ -81,3 +81,17 @@ nav a {
     margin-right: 165px;
 }
 
+/* logo section style */
+.logos{
+    display: flex;
+    position: absolute;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    width: 1110px;
+    height: 110px;
+    left: 165px;
+    top: 725px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
