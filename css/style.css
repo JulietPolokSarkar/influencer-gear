@@ -200,3 +200,84 @@ footer div i{
 .fa-instagram{
     margin-left: 20px;
 }
+
+/* .........
+media query 
+...........*/
+
+/* mobile device */
+@media only screen and (max-width:668px){
+
+    body{
+        margin: 0%;
+        width: 100%;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    .journey{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .logos{
+        display: none;
+    }
+
+    .collection-title{
+        width: 100%;
+        margin-left: 205px;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 28px;
+        color: #3A3A3A;
+    }
+
+    .collections {
+        margin-left: 220px;
+        width: 0%;
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+
+    footer{
+        color: white;
+        background-color: #202020;
+        height:30vh;
+        left: 0;
+        bottom: 0;
+        width: 210%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+}
+
+/* .........
+media query 
+...........*/
+
+/* tablets */
+@media only screen and (min-width:668px) and (max-width:992px){
+    
+    nav a{
+        display: none;
+    }
+    
+    .collections {
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 300px;
+        margin-left: 250px;
+    }
+
+    footer{
+        width: 235%;
+    }
+
+}
